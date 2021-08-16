@@ -1,0 +1,135 @@
+/* Global Css */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: rgba(29, 161, 242, 1);
+  --base-nav-color: rgb(15, 20, 25);
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+button,
+input {
+  outline: none;
+  border: none;
+}
+ul {
+  list-style-type: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 1rem 10%;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* ///////////////////// Header Start ///////////////////// */
+
+header {
+  position: sticky;
+  height: 100vh;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.nav-item {
+  font-size: 1.3rem;
+  color: var(--base-nav-color);
+}
+.nav-item > div {
+  width: 20px;
+}
+ul {
+  display: grid;
+  grid-auto-rows: auto;
+  row-gap: 1.5rem;
+}
+header ul li {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.logo {
+  margin-bottom: 1.5rem;
+}
+.logo i {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+.btn {
+  font-size: 1rem;
+  padding: 0.8rem 0;
+  font-weight: 900;
+  width: 70%;
+  border-radius: 28px;
+  background: var(--primary-color);
+  color: white;
+}
+/* ///////////////////// Header End ///////////////////// */
+
+/* //////////////////// Hero Section Start */
+.hero-section {
+  padding: 1rem;
+
+  border-top: 0;
+}
+.hero-section h3 {
+  padding: 0.5rem 1.2rem;
+}
+.feed-section {
+  border: 1px solid #ececec;
+  padding: 1rem;
+}
+.hero-section .header {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem 0;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  text-indent: 10px;
+}
+.profile-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.follow-btn {
+  display: flex;
+  background: rgb(0, 0, 0);
+  color: white;
+  border-radius: 18px;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 90px;
+  justify-self: end;
+}
+.feed-recommendation {
+  display: grid;
+  grid-template-columns: max-content 2fr 1fr;
+  margin: 2rem 0;
+}
+.user-details {
+  padding-left: 0.8rem;
+}
+.user-name {
+  display: flex;
+  gap: 10px;
+}
+/* //////////////////// Hero Section End */
